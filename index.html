@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Moinul Islam - Personal Portfolio. Computer Science & Engineering student at North Western University, Khulna, specializing in software engineering, competitive programming, and mobile app development.">
+    <title>Moinul Islam | Personal Portfolio</title>
+
+    <!-- SEO & Open Graph Tags -->
+    <meta property="og:title" content="Moinul Islam | Portfolio">
+    <meta property="og:description"
+        content="Computer Science & Engineering student at NWU Khulna specializing in web development, mobile applications, and algorithms.">
+    <meta property="og:type" content="website">
+    <meta name="robots" content="index, follow">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="workspace-container" id="ide-workspace">
+
+        <!-- IDE Header / OS Window Controls -->
+        <header class="workspace-header">
+            <div class="window-controls">
+                <span class="dot red-dot" title="Exit"></span>
+                <span class="dot yellow-dot" title="Minimize"></span>
+                <span class="dot green-dot" title="Maximize"></span>
+            </div>
+            <div class="window-title">
+                <span class="icon-terminal-header">⚙️</span> moinul@nwu-workspace: ~/portfolio1
+            </div>
+            <div class="header-tabs" id="tab-container">
+                <a href="#hero" class="tab-item active" id="tab-hero" data-target="hero">
+                    <span class="tab-icon font-sh">#️⃣</span> init.sh
+                </a>
+                <a href="#skills" class="tab-item" id="tab-skills" data-target="skills">
+                    <span class="tab-icon font-cpp">++</span> skills.cpp
+                </a>
+                <a href="#projects" class="tab-item" id="tab-projects" data-target="projects">
+                    <span class="tab-icon font-json">{}</span> projects.json
+                </a>
+                <a href="#cp" class="tab-item" id="tab-cp" data-target="cp">
+                    <span class="tab-icon font-py">🐍</span> cp_stats.py
+                </a>
+                <a href="#timeline" class="tab-item" id="tab-timeline" data-target="timeline">
+                    <span class="tab-icon font-log">📄</span> backtrace.log
+                </a>
+                <a href="#certifications" class="tab-item" id="tab-certifications" data-target="certifications">
+                    <span class="tab-icon font-reg">📁</span> registry.reg
+                </a>
+                <a href="#contact" class="tab-item" id="tab-contact" data-target="contact">
+                    <span class="tab-icon font-sh">#️⃣</span> contact.sh
+                </a>
+            </div>
+        </header>
+
+        <!-- IDE Main Body Layout -->
+        <div class="workspace-body">
+
+            <!-- LEFT PANEL: File Tree / Navigation -->
+            <aside class="sidebar-left" id="sidebar-explorer" aria-label="Project Files Explorer">
+                <div class="panel-header">
+                    <span class="panel-title">PROJECT EXPLORER</span>
+                    <span class="panel-action" title="Collapse Explorer">📁</span>
+                </div>
+                <div class="explorer-content">
+                    <div class="explorer-root">
+                        <span class="folder-icon">📂</span> <strong>Portfolio</strong>
+                        <div class="folder-contents">
+                            <a href="#hero" class="file-item active" id="file-hero" data-target="hero">
+                                <span class="file-icon">📄</span> init.sh
+                            </a>
+                            <a href="#skills" class="file-item" id="file-skills" data-target="skills">
+                                <span class="file-icon">📄</span> skills.cpp
+                            </a>
+                            <a href="#projects" class="file-item" id="file-projects" data-target="projects">
+                                <span class="file-icon">📄</span> projects.json
+                            </a>
+                            <a href="#cp" class="file-item" id="file-cp" data-target="cp">
+                                <span class="file-icon">📄</span> cp_stats.py
+                            </a>
+                            <a href="#timeline" class="file-item" id="file-timeline" data-target="timeline">
+                                <span class="file-icon">📄</span> backtrace.log
+                            </a>
+                            <a href="#certifications" class="file-item" id="file-certifications"
+                                data-target="certifications">
+                                <span class="file-icon">📄</span> registry.reg
+                            </a>
+                            <a href="#contact" class="file-item" id="file-contact" data-target="contact">
+                                <span class="file-icon">📄</span> contact.sh
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- CENTRAL EDITOR: Scrollable Content Pane -->
+            <main class="editor-pane" id="main-editor">
+
+                <!-- Line Number Gutter (Static representation aligned with CSS flex/grid layout) -->
+                <div class="line-gutter" aria-hidden="true" id="editor-gutter">
+                    <!-- Lines generated via script, or static placeholders styling lines -->
+                </div>
+
+                <!-- Editor Scrollable Canvas -->
+                <div class="editor-canvas" id="editor-scroller">
+
+                    <!-- SECTION 1: HERO (init.sh) -->
+                    <section id="hero" class="editor-section" data-file="init.sh">
+                        <div class="section-meta-header">
+                            <span class="comment">// Module initialization and candidate overview</span>
+                        </div>
+                        <div class="terminal-boot">
+                            <div class="cmd-line"><span class="prompt">moinul@nwu:~$</span> ./init_portfolio.sh</div>
+                            <div class="boot-output">
+                                <span class="log-info">[INFO]</span> Loading system configurations...<br>
+                                <span class="log-info">[INFO]</span> Resolving CSE student parameters...<br>
+                                <span class="log-success">[SUCCESS]</span> Environment loaded. Process executing in
+                                thread: main().
+                            </div>
+                        </div>
+
+                        <div class="hero-content">
+                            <h1 class="main-title">Moinul Islam</h1>
+                            <h2 class="sub-title">Computer Science & Engineering Student</h2>
+                            <p class="school-tagline">North Western University, Khulna</p>
+
+                            <p class="description-para">
+                                I am Moinul Islam, a Computer Science & Engineering student at North Western University,
+                                Khulna. I focus on developing clean frontend architectures, designing native mobile
+                                applications, and solving complex algorithmic challenges.
+                            </p>
+
+                            <div class="interactive-json-card">
+                                <div class="json-header">
+                                    <span class="json-title">moinul.json</span>
+                                    <button class="json-copy-btn" id="btn-copy-json"
+                                        title="Copy Info Object">copy</button>
+                                </div>
+                                <pre><code class="language-json">{
+  <span class="json-key">"name"</span>: <span class="json-val">"Moinul Islam"</span>,
+  <span class="json-key">"education"</span>: <span class="json-val">"B.Sc. in CSE, North Western University, Khulna"</span>,
+  <span class="json-key">"focus_areas"</span>: [
+    <span class="json-val">"Competitive Programming"</span>,
+    <span class="json-val">"Data Structures & Algorithms"</span>,
+    <span class="json-val">"Frontend Development"</span>,
+    <span class="json-val">"Mobile Application Engineering"</span>
+  ],
+  <span class="json-key">"email"</span>: <span class="json-val">"moinulislam159632@gmail.com"</span>,
+  <span class="json-key">"phone"</span>: <span class="json-val">"(+880)1997919196"</span>
+}</code></pre>
+                            </div>
+
+                            <div class="hero-actions">
+                                <a href="#projects" class="action-btn primary-btn" id="action-run-trace">
+                                    <span class="btn-symbol">▶</span> Run Trace (View Projects)
+                                </a>
+                                <a href="#contact" class="action-btn secondary-btn" id="action-cat-contact">
+                                    <span class="btn-symbol">⚙</span> cat contact.sh
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- SECTION 2: SKILLS (skills.cpp) -->
+                    <section id="skills" class="editor-section" data-file="skills.cpp">
+                        <div class="section-meta-header">
+                            <span class="comment">// #include &lt;dependencies&gt; // Hover items to inspect import
+                                connections</span>
+                        </div>
+                        <h2 class="section-title">Loaded Modules (Skills)</h2>
+
+                        <div class="dependency-container">
+                            <div class="skills-block">
+                                <h3 class="skill-category-title">// Programming Languages</h3>
+                                <div class="skills-grid" data-category="languages">
+                                    <div class="skill-chip" id="skill-c" data-deps="skill-dsa"
+                                        data-desc="Core procedural programming language used for building low-level systems, pointers mastery, and memory optimization layouts.">
+                                        <span class="chip-status success"></span> C
+                                    </div>
+                                    <div class="skill-chip" id="skill-cpp" data-deps="skill-dsa,skill-cp"
+                                        data-desc="Standard language for competitive programming. Master of STL containers, generic programming, and high-performance algorithms.">
+                                        <span class="chip-status success"></span> C++
+                                    </div>
+                                    <div class="skill-chip" id="skill-python" data-deps="skill-dsa"
+                                        data-desc="Highly productive language for system scripting, scripting automation, web backends prototyping, and rapid design implementation.">
+                                        <span class="chip-status success"></span> Python
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skills-block">
+                                <h3 class="skill-category-title">// Frontend</h3>
+                                <div class="skills-grid" data-category="frontend">
+                                    <div class="skill-chip" id="skill-html" data-deps="skill-css"
+                                        data-desc="HyperText Markup Language. Used for structuring semantic, accessible, and standards-compliant web document trees.">
+                                        <span class="chip-status info"></span> HTML
+                                    </div>
+                                    <div class="skill-chip" id="skill-css" data-deps="skill-html"
+                                        data-desc="Cascading Style Sheets. Expertise in modern layouts (Flexbox, Grid), animations, transitions, and responsive web styling.">
+                                        <span class="chip-status info"></span> CSS
+                                    </div>
+                                    <div class="skill-chip" id="skill-javascript" data-deps="skill-react"
+                                        data-desc="ECMAScript 6+. Full-stack runtime control, asynchronous programming paradigms (Promises, async/await), and DOM interaction.">
+                                        <span class="chip-status info"></span> JavaScript
+                                    </div>
+                                    <div class="skill-chip" id="skill-react" data-deps="skill-javascript"
+                                        data-desc="Declarative frontend engine. Specializing in hook architectures, components state lifecycle management, and virtual DOM diffing.">
+                                        <span class="chip-status info"></span> React
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skills-block">
+                                <h3 class="skill-category-title">// Mobile Development</h3>
+                                <div class="skills-grid" data-category="mobile">
+                                    <div class="skill-chip" id="skill-dart" data-deps="skill-flutter"
+                                        data-desc="Strongly typed object-oriented client language featuring native ahead-of-time compilation for multi-platform environments.">
+                                        <span class="chip-status info"></span> Dart
+                                    </div>
+                                    <div class="skill-chip" id="skill-flutter" data-deps="skill-dart"
+                                        data-desc="Cross-platform UI software development kit. Custom rendering engine pipelines, widget tree rendering, and state management systems.">
+                                        <span class="chip-status info"></span> Flutter
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skills-block">
+                                <h3 class="skill-category-title">// Database</h3>
+                                <div class="skills-grid" data-category="database">
+                                    <div class="skill-chip" id="skill-mysql" data-deps=""
+                                        data-desc="Relational Database Management System. Knowledge of schema design, indexing strategies, queries optimization, and normalization.">
+                                        <span class="chip-status warning"></span> MySQL
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skills-block">
+                                <h3 class="skill-category-title">// Tools</h3>
+                                <div class="skills-grid" data-category="tools">
+                                    <div class="skill-chip" id="skill-git" data-deps="skill-github"
+                                        data-desc="Distributed version control system. Command-line branch operations, merge conflict resolution, and history rebasing techniques.">
+                                        <span class="chip-status warning"></span> Git
+                                    </div>
+                                    <div class="skill-chip" id="skill-github" data-deps="skill-git"
+                                        data-desc="Cloud-based Git repository hosting platform. Expert in code collaboration reviews, pull request workflows, and repository management.">
+                                        <span class="chip-status warning"></span> GitHub
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skills-block">
+                                <h3 class="skill-category-title">// Problem Solving</h3>
+                                <div class="skills-grid" data-category="problem-solving">
+                                    <div class="skill-chip" id="skill-dsa" data-deps="skill-cpp,skill-c,skill-python"
+                                        data-desc="Deep understanding of structural data types (Trees, Graphs, HashTables) and performance-optimized algorithmic approaches.">
+                                        <span class="chip-status success"></span> Data Structures & Algorithms (DSA)
+                                    </div>
+                                    <div class="skill-chip" id="skill-cp" data-deps="skill-cpp,skill-dsa"
+                                        data-desc="Solving complex programming problems under strict time and memory execution bounds on LeetCode and Codeforces platforms.">
+                                        <span class="chip-status success"></span> Competitive Programming (CP)
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- SECTION 3: PROJECTS (projects.bin) -->
+                    <section id="projects" class="editor-section" data-file="projects.bin">
+                        <div class="section-meta-header">
+                            <span class="comment">// Compiled web packages & modules. Target: Architecture
+                                Verification.</span>
+                        </div>
+                        <h2 class="section-title">Active Executables (Projects)</h2>
+
+                        <div class="projects-list">
+
+                            <!-- Project 1: Portfolio -->
+                            <article class="project-card" id="proj-portfolio" data-title="Personal Portfolio Website"
+                                data-tech="HTML / CSS / JavaScript" data-complexity="O(1) Static Load">
+                                <div class="project-header">
+                                    <span class="proj-badge">web</span>
+                                    <h3 class="project-name">portfolio.sh</h3>
+                                    <span class="proj-meta">size: 96KB | ver: 1.0.0</span>
+                                </div>
+                                <p class="project-desc">
+                                    A personal portfolio website built using semantic HTML, vanilla CSS, and JavaScript.
+                                    Featuring a simulated terminal environment, active variables monitor, scroll spy
+                                    navigation, and custom interactive inspectors.
+                                </p>
+
+                                <div class="project-schematic" aria-label="System Architecture Diagram">
+                                    <div class="schematic-label">SYSTEM ARCHITECTURE</div>
+                                    <svg class="schematic-svg" viewBox="0 0 400 100">
+                                        <rect x="10" y="30" width="80" height="40" rx="3" class="svg-node" />
+                                        <text x="50" y="55" class="svg-text">User Input</text>
+
+                                        <line x1="90" y1="50" x2="150" y2="50" class="svg-line" />
+                                        <polygon points="150,50 142,46 142,54" class="svg-arrow" />
+
+                                        <rect x="150" y="30" width="100" height="40" rx="3" class="svg-node active" />
+                                        <text x="200" y="55" class="svg-text">DOM Engine / JS</text>
+
+                                        <line x1="250" y1="50" x2="310" y2="50" class="svg-line" />
+                                        <polygon points="310,50 302,46 302,54" class="svg-arrow" />
+
+                                        <rect x="310" y="30" width="80" height="40" rx="3" class="svg-node" />
+                                        <text x="350" y="55" class="svg-text">CSS Canvas</text>
+                                    </svg>
+                                </div>
+
+                                <div class="project-actions">
+                                    <a href="https://github.com/moinalmurtaza" target="_blank" rel="noopener noreferrer"
+                                        class="proj-action-btn github">
+                                        <span class="btn-symbol">📁</span> cat source_code
+                                    </a>
+                                    <a href="#" class="proj-action-btn run" onclick="return false;">
+                                        <span class="btn-symbol">▶</span> ./execute
+                                    </a>
+                                </div>
+                            </article>
+
+                            <!-- Project 2: My Fruits -->
+                            <article class="project-card" id="proj-myfruits" data-title="My Fruits Business Site"
+                                data-tech="HTML / CSS / JavaScript" data-complexity="O(N) Layout Render">
+                                <div class="project-header">
+                                    <span class="proj-badge">web</span>
+                                    <h3 class="project-name">my_fruits.sh</h3>
+                                    <span class="proj-meta">size: 1.2MB | ver: 1.1.0</span>
+                                </div>
+                                <p class="project-desc">
+                                    A frontend website developed for my small mango business. Focused on creating a
+                                    modern, responsive, and highly user-friendly e-commerce interface to streamline
+                                    customer product browsing and inquiries.
+                                </p>
+
+                                <div class="project-schematic" aria-label="System Architecture Diagram">
+                                    <div class="schematic-label">DATA WORKFLOW</div>
+                                    <svg class="schematic-svg" viewBox="0 0 400 100">
+                                        <rect x="10" y="30" width="80" height="40" rx="3" class="svg-node" />
+                                        <text x="50" y="55" class="svg-text">Customer</text>
+
+                                        <line x1="90" y1="50" x2="150" y2="50" class="svg-line" />
+                                        <polygon points="150,50 142,46 142,54" class="svg-arrow" />
+
+                                        <rect x="150" y="30" width="100" height="40" rx="3" class="svg-node active" />
+                                        <text x="200" y="55" class="svg-text">Mango Store UI</text>
+
+                                        <line x1="250" y1="50" x2="310" y2="50" class="svg-line" />
+                                        <polygon points="310,50 302,46 302,54" class="svg-arrow" />
+
+                                        <rect x="310" y="30" width="80" height="40" rx="3" class="svg-node" />
+                                        <text x="350" y="55" class="svg-text">Order Process</text>
+                                    </svg>
+                                </div>
+
+                                <div class="project-actions">
+                                    <a href="https://github.com/moinalmurtaza" target="_blank" rel="noopener noreferrer"
+                                        class="proj-action-btn github">
+                                        <span class="btn-symbol">📁</span> cat source_code
+                                    </a>
+                                    <a href="#" class="proj-action-btn run" onclick="return false;">
+                                        <span class="btn-symbol">▶</span> ./execute
+                                    </a>
+                                </div>
+                            </article>
+
+                            <!-- Project 3: Binary Blitz -->
+                            <article class="project-card" id="proj-binaryblitz" data-title="Binary Blitz Learning Hub"
+                                data-tech="React / Node / REST" data-complexity="O(N) State Sync">
+                                <div class="project-header">
+                                    <span class="proj-badge">app</span>
+                                    <h3 class="project-name">binary_blitz.js</h3>
+                                    <span class="proj-meta">size: 4.5MB | ver: 2.0.0</span>
+                                </div>
+                                <p class="project-desc">
+                                    A course learning platform for Competitive Programming at my university. Built the
+                                    responsive React frontend, interfacing with a REST API backend developed by my
+                                    batchmate, Shimul Mondal.
+                                </p>
+
+                                <div class="project-schematic" aria-label="System Architecture Diagram">
+                                    <div class="schematic-label">PIPELINE SCHEMATIC</div>
+                                    <svg class="schematic-svg" viewBox="0 0 400 100">
+                                        <rect x="10" y="30" width="80" height="40" rx="3" class="svg-node" />
+                                        <text x="50" y="55" class="svg-text">React UI</text>
+
+                                        <line x1="90" y1="40" x2="150" y2="40" class="svg-line" />
+                                        <polygon points="150,40 142,36 142,44" class="svg-arrow" />
+
+                                        <rect x="150" y="30" width="100" height="40" rx="3" class="svg-node active" />
+                                        <text x="200" y="55" class="svg-text">REST Gateway</text>
+
+                                        <line x1="150" y1="60" x2="90" y2="60" class="svg-line" />
+                                        <polygon points="90,60 98,56 98,64" class="svg-arrow" />
+
+                                        <line x1="250" y1="50" x2="310" y2="50" class="svg-line" />
+                                        <polygon points="310,50 302,46 302,54" class="svg-arrow" />
+
+                                        <rect x="310" y="30" width="80" height="40" rx="3" class="svg-node" />
+                                        <text x="350" y="55" class="svg-text">Shimul Backend</text>
+                                    </svg>
+                                </div>
+
+                                <div class="project-actions">
+                                    <a href="https://github.com/moinalmurtaza" target="_blank" rel="noopener noreferrer"
+                                        class="proj-action-btn github">
+                                        <span class="btn-symbol">📁</span> cat source_code
+                                    </a>
+                                    <a href="#" class="proj-action-btn run" onclick="return false;">
+                                        <span class="btn-symbol">▶</span> ./execute
+                                    </a>
+                                </div>
+                            </article>
+
+                        </div>
+                    </section>
+
+                    <!-- SECTION 4: CP STATS (cp_stats.py) -->
+                    <section id="cp" class="editor-section" data-file="cp_stats.py">
+                        <div class="section-meta-header">
+                            <span class="comment"># Running metrics validation: Algorithmic Verification logs</span>
+                        </div>
+                        <h2 class="section-title">Problem Solving Benchmarks</h2>
+
+                        <div class="cp-grid">
+
+                            <!-- LeetCode Card -->
+                            <a href="https://leetcode.com/u/moinalmurtaza/" target="_blank" rel="noopener noreferrer"
+                                class="cp-card" id="cp-leetcode" data-platform="LeetCode"
+                                style="text-decoration: none; color: inherit;">
+                                <div class="cp-card-header">
+                                    <span class="cp-icon">🏆</span>
+                                    <h3>LeetCode</h3>
+                                </div>
+                                <div class="cp-stat-large" id="lc-count">150+</div>
+                                <div class="cp-stat-label">Problems Solved</div>
+                                <div class="progress-bar-container">
+                                    <div class="progress-split-label">
+                                        <span>Easy: 50</span>
+                                        <span>Med: 80</span>
+                                        <span>Hard: 20</span>
+                                    </div>
+                                    <div class="bar-split">
+                                        <div class="bar-segment easy" style="width: 33%"></div>
+                                        <div class="bar-segment medium" style="width: 53%"></div>
+                                        <div class="bar-segment hard" style="width: 14%"></div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <!-- Codeforces Card -->
+                            <a href="https://codeforces.com/profile/moi.nulislam" target="_blank"
+                                rel="noopener noreferrer" class="cp-card" id="cp-codeforces" data-platform="Codeforces"
+                                style="text-decoration: none; color: inherit;">
+                                <div class="cp-card-header">
+                                    <span class="cp-icon">📊</span>
+                                    <h3>Codeforces</h3>
+                                </div>
+                                <div class="cp-stat-large" id="cf-count">150+</div>
+                                <div class="cp-stat-label">Problems Solved</div>
+                                <div class="cf-rank-details">
+                                    <span class="detail-label">Profile Handle:</span>
+                                    <span class="detail-value warning-text">moi.nulislam</span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- Algorithmic Focus Categories -->
+                        <div class="algo-focus-panel">
+                            <h3 class="focus-title">// Mathematical & Topological Specializations</h3>
+                            <div class="focus-bars">
+                                <div class="focus-bar-item">
+                                    <div class="focus-bar-label">Data Structures (Trees, Heaps, SegTrees)</div>
+                                    <div class="focus-track">
+                                        <div class="focus-fill" style="width: 85%"></div>
+                                    </div>
+                                </div>
+                                <div class="focus-bar-item">
+                                    <div class="focus-bar-label">Dynamic Programming (DP state transitions)</div>
+                                    <div class="focus-track">
+                                        <div class="focus-fill" style="width: 75%"></div>
+                                    </div>
+                                </div>
+                                <div class="focus-bar-item">
+                                    <div class="focus-bar-label">Graph Algorithms (DFS, BFS, Shortest Paths)</div>
+                                    <div class="focus-track">
+                                        <div class="focus-fill" style="width: 80%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- SECTION 5: TIMELINE (backtrace.log) -->
+                    <section id="timeline" class="editor-section" data-file="backtrace.log">
+                        <div class="section-meta-header">
+                            <span class="comment">// Call Stack Backtrace -- Process execution history</span>
+                        </div>
+                        <h2 class="section-title">System Execution backtrace</h2>
+
+                        <div class="stack-trace">
+
+                            <!-- Educational frame #0: NWU B.Sc CSE -->
+                            <div class="trace-frame active-frame">
+                                <div class="frame-meta">
+                                    <span class="frame-num">frame #0:</span>
+                                    <span class="frame-address">0x004016f0</span>
+                                    <span class="frame-function">NWU_Khulna::study()</span>
+                                </div>
+                                <div class="frame-details">
+                                    <div class="detail-line"><span class="lbl">Program:</span> Bachelor of Science in
+                                        Computer Science & Engineering (CSE)</div>
+                                    <div class="detail-line"><span class="lbl">Institution:</span> North Western
+                                        University, Khulna</div>
+                                    <div class="detail-line"><span class="lbl">Admission:</span> 20 January 2025</div>
+                                    <div class="detail-line"><span class="lbl">Timeline:</span> 2025 - Present</div>
+                                    <div class="detail-line"><span class="lbl">CGPA:</span> x.xx</div>
+                                </div>
+                            </div>
+
+                            <!-- Educational frame #1: Govt Bangabandhu College HSC -->
+                            <div class="trace-frame">
+                                <div class="frame-meta">
+                                    <span class="frame-num">frame #1:</span>
+                                    <span class="frame-address">0x00402b8a</span>
+                                    <span class="frame-function">Govt_Bangabandhu_College::hsc()</span>
+                                </div>
+                                <div class="frame-details">
+                                    <div class="detail-line"><span class="lbl">Program:</span> Higher Secondary
+                                        Certificate (HSC)</div>
+                                    <div class="detail-line"><span class="lbl">Institution:</span> Govt. Bangabandhu
+                                        College, Gopalganj</div>
+                                    <div class="detail-line"><span class="lbl">Graduation:</span> 2021</div>
+                                    <div class="detail-line"><span class="lbl">GPA:</span> 5.00 / 5.00</div>
+                                </div>
+                            </div>
+
+                            <!-- Educational frame #2: SM Model Govt High School SSC -->
+                            <div class="trace-frame">
+                                <div class="frame-meta">
+                                    <span class="frame-num">frame #2:</span>
+                                    <span class="frame-address">0x00403c94</span>
+                                    <span class="frame-function">SM_Model_Govt_High_School::ssc()</span>
+                                </div>
+                                <div class="frame-details">
+                                    <div class="detail-line"><span class="lbl">Program:</span> Secondary School
+                                        Certificate (SSC)</div>
+                                    <div class="detail-line"><span class="lbl">Institution:</span> S.M. Model Government
+                                        High School, Gopalganj</div>
+                                    <div class="detail-line"><span class="lbl">Graduation:</span> 2019</div>
+                                    <div class="detail-line"><span class="lbl">GPA:</span> 5.00 / 5.00</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+
+                    <!-- SECTION 6: REGISTRY (registry.reg) -->
+                    <section id="certifications" class="editor-section" data-file="registry.reg">
+                        <div class="section-meta-header">
+                            <span class="comment">; System Registry settings database keys. Responsibilities & hobbies
+                                definitions.</span>
+                        </div>
+                        <h2 class="section-title">System Configurations Registry</h2>
+
+                        <div class="registry-database">
+
+                            <!-- Entry 1: Responsibility -->
+                            <div class="registry-row" id="reg-nwu-hackathon" data-hash="NWU-HACK-027"
+                                data-date="2025-09-16">
+                                <div class="registry-cell key">
+                                    <span class="key-label">REGISTRY::RESPONSIBILITY::ORGANIZER</span>
+                                </div>
+                                <div class="registry-cell val">
+                                    <div class="reg-meta-info">
+                                        <span class="reg-title">Hackathon Organizer</span><br>
+                                        <span class="reg-vendor">North Western University, Khulna</span> |
+                                        <span class="reg-verify">Duration: 16-09-2025 – Present</span>
+                                        <p
+                                            style="margin-top: 6px; font-size: 13px; line-height: 1.4; color: var(--color-text-secondary);">
+                                            • Organized university hackathons.<br>
+                                            • Conducted web development sessions.<br>
+                                            • Mentored and coordinated 30+ university students.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Entry 2: Hobby Reading -->
+                            <div class="registry-row" id="reg-hobby-reading" data-hash="HOBBY-READ"
+                                data-date="2026-07-15">
+                                <div class="registry-cell key">
+                                    <span class="key-label">REGISTRY::HOBBY::READING</span>
+                                </div>
+                                <div class="registry-cell val">
+                                    <div class="reg-meta-info">
+                                        <span class="reg-title">Reading Books</span><br>
+                                        <span class="text-muted">Exploring software development literature, science
+                                            publications, and creative works.</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Entry 3: Hobby Poems -->
+                            <div class="registry-row" id="reg-hobby-poems" data-hash="HOBBY-POEM"
+                                data-date="2026-07-15">
+                                <div class="registry-cell key">
+                                    <span class="key-label">REGISTRY::HOBBY::POEMS</span>
+                                </div>
+                                <div class="registry-cell val">
+                                    <div class="reg-meta-info">
+                                        <span class="reg-title">Writing Poems</span><br>
+                                        <span class="text-muted">Composing creative poetry, reflective stanzas, and
+                                            artistic literary expressions.</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Extensible Placeholder Entry to show cleanly structured design system -->
+                            <div class="registry-row placeholder-row">
+                                <div class="registry-cell key">
+                                    <span class="key-label">REGISTRY::SYSTEM::[APPEND_NEW_KEY]</span>
+                                </div>
+                                <div class="registry-cell val">
+                                    <span class="text-muted">; System ready to append additional config parameter
+                                        entries</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+
+                    <!-- SECTION 7: CONTACT / TERMINAL (contact.sh) -->
+                    <section id="contact" class="editor-section" data-file="contact.sh">
+                        <div class="section-meta-header">
+                            <span class="comment">// Execute terminal communication scripts</span>
+                        </div>
+                        <h2 class="section-title">Simulated System Console</h2>
+
+                        <div class="terminal-shell" id="contact-terminal">
+                            <div class="terminal-body" id="terminal-stdout">
+                                <div class="stdout-row">
+                                    <span class="terminal-prompt">moinul@nwu-os:~$</span> ./help_commands.sh
+                                </div>
+                                <div class="stdout-row response">
+                                    Available system routines to run:<br>
+                                    - <button class="term-link-btn"
+                                        data-cmd="contact_details">./contact_details.sh</button> : Prints channels of
+                                    communication<br>
+                                    - <button class="term-link-btn"
+                                        data-cmd="download_resume">./download_resume.sh</button> : Resolves PDF file
+                                    fetch<br>
+                                    - <button class="term-link-btn" data-cmd="clear">clear</button> : Wipes terminal
+                                    output logs
+                                </div>
+                            </div>
+                            <div class="terminal-input-row">
+                                <span class="terminal-prompt">moinul@nwu-os:~$</span>
+                                <span class="input-line-wrapper">
+                                    <input type="text" id="terminal-stdin" autocomplete="off"
+                                        placeholder="Select a script or type command..." aria-label="Terminal stdin">
+                                    <span class="blinking-cursor" aria-hidden="true"></span>
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Fallback accessible links for web crawlers / non-terminal readers -->
+                        <div class="fallback-links" aria-label="Alternative Contact Links">
+                            <h3>Direct Channels:</h3>
+                            <ul
+                                style="list-style-type: none; padding-left: 0; display: flex; flex-direction: column; gap: 8px;">
+                                <li>📧 <strong>Email:</strong> <a href="mailto:moinulislam159632@gmail.com"
+                                        id="fallback-email">moinulislam159632@gmail.com</a></li>
+                                <li>📞 <strong>Phone:</strong> <span
+                                        style="color: var(--color-text-secondary);">(+880)1997919196</span></li>
+                                <li>🐙 <strong>GitHub:</strong>
+                                    <a href="https://github.com/moinalmurtaza" target="_blank"
+                                        rel="noopener noreferrer">github.com/moinalmurtaza</a> |
+                                    <a href="https://github.com/moi-nulislam" target="_blank"
+                                        rel="noopener noreferrer">github.com/moi-nulislam</a>
+                                </li>
+                                <li>🔗 <strong>LinkedIn:</strong> <a
+                                        href="https://www.linkedin.com/in/moinul-islam-6ab888290" target="_blank"
+                                        rel="noopener noreferrer">linkedin.com/in/moinul-islam-6ab888290</a></li>
+                                <li>🐦 <strong>X (Twitter):</strong> <a href="https://x.com/moinulislam_07"
+                                        target="_blank" rel="noopener noreferrer">x.com/moinulislam_07</a></li>
+                                <li>👥 <strong>Facebook:</strong> <a href="https://facebook.com/moinalmurtza"
+                                        target="_blank" rel="noopener noreferrer">facebook.com/moinalmurtza</a></li>
+                                <li>🏆 <strong>Codeforces:</strong> <a
+                                        href="https://codeforces.com/profile/moi.nulislam" target="_blank"
+                                        rel="noopener noreferrer"
+                                        id="fallback-codeforces">codeforces.com/profile/moi.nulislam</a></li>
+                                <li>📝 <strong>LeetCode:</strong> <a href="https://leetcode.com/u/moinalmurtaza/"
+                                        target="_blank" rel="noopener noreferrer">leetcode.com/u/moinalmurtaza</a></li>
+                                <li>📄 <strong>Resume:</strong> <a
+                                        href="https://docs.google.com/document/d/1xYbGYa1ABki_zuhVrAGirHQoH9J2ErJ7BX2DTN6-2CE/edit?usp=sharing"
+                                        target="_blank" rel="noopener noreferrer">Google Doc Resume</a></li>
+                            </ul>
+                        </div>
+                    </section>
+
+                </div>
+            </main>
+
+            <!-- RIGHT PANEL: Inspector Panel -->
+            <aside class="sidebar-right" id="sidebar-inspector" aria-label="System Inspector Panel">
+                <div class="panel-header">
+                    <span class="panel-title">VARIABLES MONITOR</span>
+                    <span class="panel-action">🔬</span>
+                </div>
+                <div class="inspector-content">
+
+                    <!-- Dynamic Watch Panel -->
+                    <div class="watch-pane">
+                        <h4 class="watch-header">Watch Variables</h4>
+                        <div class="watch-list" id="watch-variable-list">
+                            <div class="watch-item">
+                                <span class="w-name">moinul_state</span> = <span class="w-val">"ACTIVE"</span>
+                            </div>
+                            <div class="watch-item">
+                                <span class="w-name">current_file</span> = <span class="w-val"
+                                    id="watch-current-file">"init.sh"</span>
+                            </div>
+                            <div class="watch-item">
+                                <span class="w-name">cp_count</span> = <span class="w-val">400</span>
+                            </div>
+                            <div class="watch-item">
+                                <span class="w-name">stack_frame</span> = <span class="w-val"
+                                    id="watch-stack-frame">#0</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Dynamic Focus Inspector -->
+                    <div class="context-pane">
+                        <h4 class="watch-header">Context Inspector</h4>
+                        <div class="context-details" id="context-inspector-box">
+                            <span class="comment">/* Hover over project cards or skill modules to dump detailed runtime
+                                metrics to this pane. */</span>
+                            <div class="context-placeholder" id="inspector-idle-text">
+                                System idling. Awaiting hover input.
+                            </div>
+                            <div class="context-active-data hidden" id="inspector-data-box">
+                                <div class="ins-title" id="ins-item-title">Item Name</div>
+                                <div class="ins-meta" id="ins-item-meta">Meta Details</div>
+                                <div class="ins-desc" id="ins-item-desc">Item Description</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- System Diagnostics -->
+                    <div class="system-stats-pane">
+                        <h4 class="watch-header">Kernel Diagnostics</h4>
+                        <div class="system-metrics">
+                            <div class="metric-row">
+                                <span class="met-label">CPU LOAD</span>
+                                <div class="met-track">
+                                    <div class="met-fill" id="cpu-fill" style="width: 12%"></div>
+                                </div>
+                                <span class="met-percent" id="cpu-percent">12%</span>
+                            </div>
+                            <div class="metric-row">
+                                <span class="met-label">MEM ALLOC</span>
+                                <span class="met-val">412 KB / static</span>
+                            </div>
+                            <div class="metric-row">
+                                <span class="met-label">SCROLL OFF</span>
+                                <span class="met-val" id="scroll-offset-val">0px</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </aside>
+
+        </div>
+
+        <!-- IDE Footer / Status Console -->
+        <footer class="workspace-footer">
+            <div class="footer-left">
+                <span class="status-indicator success-bg"></span>
+                <span class="status-label">● READY</span>
+                <span class="console-divider">|</span>
+                <span class="active-task-label" id="footer-console-msg">System initialized. Awaiting commands...</span>
+            </div>
+            <div class="footer-right">
+                <span class="file-format-lbl">UTF-8</span>
+                <span class="console-divider">|</span>
+                <span class="cursor-pos-lbl" id="cursor-pos">Ln 1, Col 1</span>
+                <span class="console-divider">|</span>
+                <span class="compiler-version-lbl">GCC 11.2.0</span>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="app.js"></script>
+</body>
+
+</html>
